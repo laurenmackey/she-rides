@@ -1,3 +1,38 @@
 body, html {
 	height: 100%;
 }
+
+.display-4 {
+	font-size: 2em;
+}
+
+.logo {
+	font-family: "SignPainter";
+	color: #41C2B2;
+	font-size: 20px;
+}
+
+.button {
+	background-color: #41C2B2;
+}
+
+button {
+	background-color: #41C2B2;
+	color: white;
+}
+
+input[type=submit] {
+	background: #41C2B2;
+	color: white;
+}
+
+.container {
+	text-align: center;
+}
+
+.box {
+	border: 1px solid gray;
+	padding: 20px;
+	margin: 20px;
+	text-align: center;
+}

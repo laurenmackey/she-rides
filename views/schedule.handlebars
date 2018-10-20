@@ -1,17 +1,17 @@
 <div class="container">
     <br>
-    <div class="jumbotron">
-        <h1 class="display-4 centered">Schedule a Commute</h1>
-    </div>
+    <h1 class="display-4 centered">Pick your trip</h1>
 
     <form action="/loading">
-        Transportation Agency:
+        <div class="box">
+        Transportation:
         <select name="Transportation Agency">
             <option value="caltrain" selected>Caltrain</option>
             <option value="MUNI">MUNI</option>
             <option value="BART">BART</option>
         </select>
-        <br><br>
+        </div>
+        <div class="box">
         From:
         <select name="From">
             <option value="San Jose Diridon" selected>San Jose Diridon</option>
@@ -33,9 +33,9 @@
             <option value="Millbrae" >Millbrae</option>
             <option value="Burlingame" >Burlingame</option>
         </select>
-        <br><br>
-        <b>When:</b>
-        <br><br>
+        </div>
+
+        <div class="box">
         Date:
         <input type="date" id="date" name="trip"
                value="2018-10-20"
@@ -51,7 +51,9 @@
             <option value="11:23 PM" >11:23 PM</option>
             <option value="11:49 PM" >11:49 PM</option>
         </select>
-        <br><br>
-        <input type="submit">
+        </div>
+        <div class="submit">
+        <input class="submit" type="Submit">
+        </div>
     </form>
 </div>
