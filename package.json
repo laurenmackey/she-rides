@@ -1,0 +1,24 @@
+{
+  "name": "she-rides",
+  "version": "1.0.0",
+  "description": "She rides app with express and node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laurenmackey/she-rides.git"
+  },
+  "author": "she-riders",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laurenmackey/she-rides/issues"
+  },
+  "homepage": "https://github.com/laurenmackey/she-rides#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0"
+  }
+}
