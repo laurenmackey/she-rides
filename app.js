@@ -28,6 +28,16 @@ app.get('/login', function(req, res){
     res.render('login');
 });
 
+// Render scheduling page
+app.get('/schedule', function(req, res){
+    res.render('schedule');
+});
+
+// Render loading page
+app.get('/loading', function(req, res){
+    res.render('loading');
+});
+
 app.listen(app.get('port'), function(){
     console.log('Express started on local host!');
 });
