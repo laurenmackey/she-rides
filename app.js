@@ -13,16 +13,6 @@ app.get('/', function(req, res){
     res.render('home');
 });
 
-// Render signup page
-app.get('/signup', function(req, res){
-    //var myContext = {};
-    // myContext.showTimer = true;
-    // myContext.bodyId = "classicalBody";
-    // myContext.buttonId = "classicalButton";
-    //res.render('signup', myContext);
-    res.render('signup');
-});
-
 // Render login page
 app.get('/login', function(req, res){
     res.render('login');
