@@ -1,5 +1,6 @@
 body, html {
 	height: 100%;
+<<<<<<< HEAD
     /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -197,3 +198,41 @@ footer {
         top: 0px;
     }
 /* end footer */
+=======
+}
+
+.display-4 {
+	font-size: 2em;
+}
+
+.logo {
+	font-family: "SignPainter";
+	color: #41C2B2;
+	font-size: 20px;
+}
+
+.button {
+	background-color: #41C2B2;
+}
+
+button {
+	background-color: #41C2B2;
+	color: white;
+}
+
+input[type=submit] {
+	background: #41C2B2;
+	color: white;
+}
+
+.container {
+	text-align: center;
+}
+
+.box {
+	border: 1px solid gray;
+	padding: 20px;
+	margin: 20px;
+	text-align: center;
+}
+>>>>>>> 7ef5e0164f4469930d4da4ead68588872a7bdfde

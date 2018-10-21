@@ -22,20 +22,65 @@
             <li class="nav-item active">
                 <a class="nav-link" href="/login">Log In<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown Example
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/classical">Classical</a>
-                <a class="dropdown-item" href="/lofi">LoFi Hip-hop</a>
-                <a class="dropdown-item" href="/ambient">Ambient</a>
-                </div>
+            <li class="nav-item active">
+                <a class="nav-link" href="/schedule">Schedule a Commute<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="logo">SheRides
             </li>
             </ul>
         </div>
         </nav>
             {{{body}}}
+        <div style = 'display:none;' id='status'> </div>
         <!--<script src="script.js"></script>-->
+        <script>
+               window.fbAsyncInit = function() {
+                FB.init({
+                  appId            : '1900620443353720',
+                  autoLogAppEvents : true,
+                  xfbml            : true,
+                  version          : 'v3.1'
+                });
+              
+
+                /*FB.getLoginStatus(function(response){
+                    if(response.status === 'connected') {
+                        document.getElementById('status').innerHTML = 'You are logged in!';
+
+                    } else if(response.status === 'not_authorized'){
+                        document.getElementById('status').innerHTML = 'You are not logged in!';
+                    }
+                    else{
+                        document.getElementById('status').innerHTML = 'You are not logged in to Facebook!';
+                    }
+
+              });*/
+          };
+
+              (function(d, s, id){
+                 var js, fjs = d.getElementsByTagName(s)[0];
+                 if (d.getElementById(id)) {return;}
+                 js = d.createElement(s); js.id = id;
+                 js.src = "https://connect.facebook.net/en_US/sdk.js";
+                 fjs.parentNode.insertBefore(js, fjs);
+               }(document, 'script', 'facebook-jssdk'));
+
+
+              function login(){
+                    document.getElementById('loginbtn').style.display = "none";
+                    FB.login(function(response){
+                            if(response.status === 'connected') {
+                        document.getElementById('status').innerHTML = 'You are logged in!';
+
+                        } else if(response.status === 'not_authorized'){
+                            document.getElementById('status').innerHTML = 'You are not logged in!';
+                        }
+                        else{
+                            document.getElementById('status').innerHTML = 'You are not logged in to Facebook!';
+                        }
+                    });
+              }
+        </script>
+        <!--  <button onclick="login()">Login</button>    -->
     </body>
 </html>
