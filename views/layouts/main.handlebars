@@ -67,7 +67,7 @@
 
 
               function login(){
-                    document.getElementById('loginbtn').disabled = true;
+                    document.getElementById('loginbtn').style.display = "none";
                     FB.login(function(response){
                             if(response.status === 'connected') {
                         document.getElementById('status').innerHTML = 'You are logged in!';
