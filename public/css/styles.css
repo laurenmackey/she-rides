@@ -209,13 +209,25 @@ footer {
 	font-size: 20px;
 }
 
-.button {
-	background-color: #41C2B2;
+/*.button {*/
+	/*background-color: #41C2B2;*/
+	/*color: white;*/
+/*}*/
+
+.cancel {
+	color: #41C2B2;
+}
+
+.cancel2 {
+	color: #41C2B2;
+	background-color: white;
 }
 
 button {
 	background-color: #41C2B2;
 	color: white;
+	margin: 20px;
+	width: 100px;
 }
 
 input[type=submit] {
@@ -232,4 +244,30 @@ input[type=submit] {
 	padding: 20px;
 	margin: 20px;
 	text-align: center;
+}
+
+.riders {
+	position: absolute;
+	margin-left: 220px;
+}
+
+.acceptance {
+	margin-top: 250px;
+}
+
+.image-cropper {
+	width: 200px;
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 50%;
+	float: left;
+	margin: 20px;
+}
+
+img {
+	display: inline;
+	margin: 0 auto;
+	height: 100%;
+	width: auto;
 }

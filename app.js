@@ -38,6 +38,11 @@ app.get('/loading', function(req, res){
     res.render('loading');
 });
 
+// Render match page
+app.get('/match', function(req, res){
+    res.render('match');
+});
+
 app.listen(app.get('port'), function(){
     console.log('Express started on local host!');
 });
